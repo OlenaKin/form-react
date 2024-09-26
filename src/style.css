@@ -1,0 +1,122 @@
+body {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 26px;
+  color: green;
+  text-transform: uppercase;
+}
+
+.form-container {
+  margin: 0 auto;
+  display: flex; /* Enable flexbox */
+  flex-direction: row; /* Make it vertical layout */
+  flex-wrap: wrap;
+  background-color: pink;
+  max-width: 600px;
+  width: 100%;
+  padding: 50px 0 50px 70px;
+  gap: 10px; /* Adjust gap to manage spacing between fields */
+  border-radius: 10px;
+}
+
+.label__container {
+  display: flex; /* Use flexbox to align label and input */
+  align-items: flex-start; /* Align labels with input vertically */
+  justify-content: center; /* Ensure labels and inputs are aligned */
+  margin-bottom: 15px;
+  white-space: wrap;
+  flex-direction: column;
+  flex: 1;
+  align-items: start;
+  text-align: left;
+  border: 5px solid red;
+}
+
+label {
+  font-size: 16px;
+  color: green;
+  margin: 0; /* Remove extra margins */
+  display: block;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+input,
+select {
+  padding: 10px;
+  font-size: 14px;
+  width: 230px;
+  border-radius: 8px;
+  border: none;
+  margin-right: 25px;
+}
+
+.gender__contaier {
+  text-align: left;
+  width: 230px;
+  display: flex;
+  margin-top: 10px;
+}
+
+.custom-radio {
+  width: 20px;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  height: 50px;
+  width: 200px;
+  margin: 20px 0 0 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.error-container {
+  height: 20px;
+  text-align: left;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  min-height: 10px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    text-align: center;
+    margin-left: 10px;
+    font-size: 20px;
+  }
+  .form-container {
+    flex-direction: column;
+    text-align: left;
+    width: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    margin: 5px;
+  }
+
+  select {
+    width: auto;
+  }
+
+  input[type="date"] {
+    width: 150px;
+  }
+
+  button {
+    margin: 0 auto;
+  }
+}
